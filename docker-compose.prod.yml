@@ -1,0 +1,19 @@
+﻿name: ${PROJECT_NAME}-angular
+
+services:
+  caddy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: prod
+    container_name: ${PROJECT_NAME}-angular-caddy
+    restart: always
+    env_file:
+      - .env
+    networks:
+      - template-network
+
+networks:
+  template-network:
+    external: true
+    name: ${PROJECT_NAME}-network
