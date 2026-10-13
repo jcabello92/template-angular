@@ -1,4 +1,4 @@
-﻿.env
+.env
 .env.*
 .gitignore
 docker-compose.prod.yml
@@ -7,3 +7,13 @@ README.md
 .git/
 
 .DS_Store
+
+# Temporales de Angular y builds
+.angular/
+node_modules/
+dist/
+.sass-cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

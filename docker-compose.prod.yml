@@ -1,4 +1,4 @@
-﻿name: ${PROJECT_NAME}-angular
+name: ${PROJECT_NAME}-angular
 
 services:
   caddy:
